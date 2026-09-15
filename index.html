@@ -7,15 +7,12 @@ window.SHOP_CONFIG = {
   shopName: "Y2 Game Shop",
   currency: "Ks",
   packages: [
-    { diamonds: 86,  price: 5600 },
-    { diamonds: 172, price: 11000 },
-    { diamonds: 257, price: 16500 },
-    { diamonds: 343, price: 21200 },
-    { diamonds: 429, price: 27000 },
-    { diamonds: 515, price: 31800 },
-    { diamonds: 706, price: 42000 },
-    { diamonds: 878, price: 53000 },
-    { diamonds: 963, price: 58000 }
+    { diamonds: 86,  price: 2500 },
+    { diamonds: 172, price: 5000 },
+    { diamonds: 257, price: 7500 },
+    { diamonds: 344, price: 10000 },
+    { diamonds: 429, price: 12500 },
+    { diamonds: 514, price: 15000 }
   ]
 };
 </script>
@@ -147,8 +144,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <script>
 const packages=[
- {d:86,p:5600},{d:172,p:11000},{d:257,p:16500},{d:343,p:21200},{d:429,p:27000},
- {d:515,p:31800},{d:706,p:42000},{d:878,p:53000},{d:963,p:58000}
+ {d:86,p:2500},{d:172,p:5000},{d:257,p:7500},{d:344,p:10000},{d:429,p:12500},{d:514,p:15000}
 ];
 let orders=JSON.parse(localStorage.getItem('diamond_orders')||'[]'), selectedMethod='KBZPay';
 const money=n=>new Intl.NumberFormat('en-US').format(n)+' Ks';
